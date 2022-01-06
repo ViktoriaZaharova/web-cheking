@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>WEB CHEKING</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo">
+    <span class="logo-img"><img src="img/logo.png" alt=""></span>
+    <span class="logo-text">WEB CHEKING</span>
+  </a>
+
+  <ul class="menu">
+    <li><a href="#about" class="go_to">О сервисе</a></li>
+    <li><a href="#tariffs" class="go_to">Тарифы</a></li>
+    <li><a href="#opportunities" class="go_to">Возможности</a></li>
+    <li><a href="#mobile-app" class="go_to">Мобильное приложение</a></li>
+    <li><a href="#business" class="go_to">Бизнес</a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo">
+          <span class="logo-img"><img src="img/logo.png" alt=""></span>
+          <span class="logo-text">WEB CHEKING</span>
+        </a>
+
+        <ul class="menu">
+          <li><a href="#about" class="go_to">О сервисе</a></li>
+          <li><a href="#tariffs" class="go_to">Тарифы</a></li>
+          <li><a href="#opportunities" class="go_to">Возможности</a></li>
+          <li><a href="#mobile-app" class="go_to">Мобильное приложение</a></li>
+          <li><a href="#business" class="go_to">Бизнес</a></li>
+        </ul>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="home" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Автоматическая
+          онлайн-регистрация</h1>
+      </div>
+
+      <div class="col-12">
+        <div class="box-text">
+          <p>1Checkin — это отличный инструмент для тех, кто часто путешествует.
+            Экономьте ваше время, забудьте о заботах с регистрацией на рейс и получайте ваши любимые места.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <form method="post" class="form">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <label>
+                <input type="text" placeholder="Выберете авиакомпанию" name="avia">
+                <span class="input-icon"><img src="img/003-plane.svg" alt=""></span>
+              </label>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <label>
+                <input type="text" placeholder="Фамилия, Имя, Отчество" name="name">
+                <span class="input-icon"><img src="img/004-user.svg" alt=""></span>
+              </label>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <label>
+                <input type="text" placeholder="Номер билета (13 цифр)" name="number_tickets">
+                <span class="input-icon"><img src="img/tickets.svg" alt=""></span>
+              </label>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <label>
+                <input type="text" placeholder="Выберете дату вылета" class="datepicker" name="date_calendar">
+                <span class="input-icon"><img src="img/002-calendar.svg" alt=""></span>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-accent">НАЧАТЬ РЕГИСТРАЦИЮ</button>
+            </div>
+
+            <div class="col-12">
+              <div class="consent">Нажимая на кнопку, Вы даете свое согласие с Политикой обработки данных и Условиями
+                предоставления услуги
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="registration-stages">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Регистрируйся на рейс
+          всего в 3 шага</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="registration-stages-box">
+          <div class="registration-stages-box__icon"><img src="img/step1.png" alt=""></div>
+          <h4>Заполните быструю <br>
+            форму на нашем сайте</h4>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="registration-stages-box">
+          <div class="registration-stages-box__icon"><img src="img/step2.png" alt=""></div>
+          <h4>Оплатите заявку удобным для вас способом онлайн</h4>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="registration-stages-box">
+          <div class="registration-stages-box__icon"><img src="img/step3.png" alt=""></div>
+          <h4>Получите посадочный талон</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="business opportunities" id="opportunities">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Вам больше не придется
+          лететь на последнем ряду</h2>
+        <div class="opportunities-text">
+          <p>1Checkin берет на себя заботы о ваших перелетах. Мы зарегистрируем вас автоматически, как только
+            регистрация станет доступна. Неважно, в какой точке земного шара вы находитесь и есть ли у вас подключение к
+            интернету. Управляйте и следите за всеми вашими перелетами и храните все посадочные талоны в одном
+            приложении.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="business-content">
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-50">
+              <div class="business-box">
+                <div class="business-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#booking"></use>
+                  </svg>
+                </div>
+                <div class="business-box__body">
+                  <h3>Автоматическая регистрация</h3>
+                  <div class="box-text">
+                    <p>Регистрируйтесь раньше всех и повысьте ваши шансы получить любимые места! <a href="#"
+                                                                                                    class="color-accent d-block">Узнать
+                      больше</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-50">
+              <div class="business-box">
+                <div class="business-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#seat"></use>
+                  </svg>
+                </div>
+                <div class="business-box__body">
+                  <h3>Настройте выбор мест</h3>
+                  <div class="box-text">
+                    <p>Получайте любимые места и садитесь рядом с друзьями, коллегами и членами семьи!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-50">
+              <div class="business-box">
+                <div class="business-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#web"></use>
+                  </svg>
+                </div>
+                <div class="business-box__body">
+                  <h3>Работает, когда вы не в сети</h3>
+                  <div class="box-text">
+                    <p>Проблемы с интернетом во время путешествий? 1Checkin зарегистрирует вас в любом случае, и вы
+                      получите посадочный талон, как только подключитесь к Сети.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-50">
+              <div class="business-box">
+                <div class="business-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#hours-24"></use>
+                  </svg>
+                </div>
+                <div class="business-box__body">
+                  <h3>Всегда на связи</h3>
+                  <div class="box-text">
+                    <p>Работаем круглосуточно, зарегистрируем на рейс в праздничные и выходные дни</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-50">
+              <div class="business-box">
+                <div class="business-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#booking"></use>
+                  </svg>
+                </div>
+                <div class="business-box__body">
+                  <h3>Летите за границу?</h3>
+                  <div class="box-text">
+                    <p>Сообщим о необходимости визы
+                      или сертификата о вакцинации
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-50">
+              <div class="business-box">
+                <div class="business-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#suitcase"></use>
+                  </svg>
+                </div>
+                <div class="business-box__body">
+                  <h3>Дополнительная информация</h3>
+                  <div class="box-text">
+                    <p>Проинформируем о нормах провоза багажа и доступном питании на борту
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="business-img"><img src="img/phone-img1.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tariffs m-120" id="tariffs">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Для тех, кто ценит комфорт
+          в путешествиях</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+        <div class="tariffs-box">
+          <div class="tariffs-box__head">
+            <h4>Специальное предложение</h4>
+          </div>
+          <div class="tariffs-box__body">
+            <ul class="list-check">
+              <li>Это разовая покупка пакета
+                <button type="button" class="btn-tooltip" data-toggle="tooltip" title="Подсказка слева"><img
+                    src="img/question.svg" alt=""></button>
+              </li>
+              <li>Вы получите 10 регистраций
+                по супер цене
+              </li>
+              <li>Включает все возможности</li>
+            </ul>
+            <div class="tariffs-box__content">
+              <div class="tariffs-description">
+                <p>Почему выбирают 1Checkin?</p>
+                <p>Мы делаем вашу жизнь проще!</p>
+              </div>
+
+              <div class="price-wrapper">
+                <div class="old-price">898 ₽</div>
+                <div class="new-price">399 ₽</div>
+              </div>
+              <div class="info-tariffs">за 10 регистраций</div>
+
+              <a href="#" class="btn btn-accent">НАЧАТЬ С ВЫГОДОЙ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="tariffs-box">
+          <div class="tariffs-box__head">
+            <h4>Frequent Flyer</h4>
+          </div>
+          <div class="tariffs-box__body">
+            <ul class="list-check">
+              <li>Включает все возможности</li>
+              <li>Регистрации без ограничений
+                Для всех ваших перелетов
+                и для всех, кто летит с вами!
+              </li>
+              <li>Неограниченное количество
+                пассажиров
+              </li>
+            </ul>
+            <div class="tariffs-box__content">
+              <div class="price-wrapper">
+                <div class="new-price">299 ₽</div>
+              </div>
+              <div class="info-tariffs">в месяц</div>
+              <a href="#" class="btn btn-accent">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="business" id="business">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Легко и просто - летайте с умом</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-6 order-lg-1">
+        <div class="business-content">
+          <div class="business-box">
+            <div class="business-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#notification"></use>
+              </svg>
+            </div>
+            <div class="business-box__body">
+              <h3>Уведомления о рейсе</h3>
+              <div class="box-text">
+                <p>Получайте уведомления в реальном времени, чтобы быть в курсе изменений вашего рейса. 1Checkin
+                  уведомит вас об изменениях гейта, как только информация станет доступна.</p>
+              </div>
+            </div>
+          </div>
+          <div class="business-box">
+            <div class="business-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#seat"></use>
+              </svg>
+            </div>
+            <div class="business-box__body">
+              <h3>Выбор мест</h3>
+              <div class="box-text">
+                <p>Запросите карту мест предстоящего перелета и выберите свои места. Вы также можете выбрать и купить
+                  платное место в нашем приложении.</p>
+              </div>
+            </div>
+          </div>
+          <div class="business-box">
+            <div class="business-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#suitcase"></use>
+              </svg>
+            </div>
+            <div class="business-box__body">
+              <h3>Покупка багажа</h3>
+              <div class="box-text">
+                <p>Получите информацию о доступном багаже, закажите дополнительный багаж или особую еду при помощи одной
+                  кнопки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="business-img"><img src="img/phone-img2.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="reviews m-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Отзывы</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="reviews-slider">
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__head">
+                <div class="reviews-box__avatar"><img src="img/user.png" alt=""></div>
+                <div class="reviews-box__name">
+                  <h4>Frequent Flyer</h4>
+                  <a href="#" class="links-accent">из Google Play</a>
+                </div>
+              </div>
+              <div class="reviews-box__body">
+                <div class="box-text">
+                  <p>На все рейсы регистрация прошла успешно, посадочные пришли на почту) Отличное приложение, must have
+                    всем путешественникам. Особенно удобно, что можно зарегистрироваться даже если нет интернета - можно
+                    приехать в аэропорт, подключиться к Wi-Fi, скачать посадочные и сразу идти к гейтам (если нет
+                    багаж…</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__head">
+                <div class="reviews-box__avatar"><img src="img/user.png" alt=""></div>
+                <div class="reviews-box__name">
+                  <h4>Frequent Flyer</h4>
+                </div>
+              </div>
+              <div class="reviews-box__body">
+                <div class="box-text">
+                  <p>Хочу выразить благодарность сотрудникам компании за качественную и оперативную работу. Ваш сервис
+                    экономит мое время на подготовку к полетам, своевременное получение посадочных талонов и регистрации
+                    на рейс. Мне не нужно выходить на сайты авиакомпаний и заполнять формы для прохождения регистрации.
+                    Автоматизация этого процесса значительно облегчает жизнь.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__head">
+                <div class="reviews-box__avatar"><img src="img/user.png" alt=""></div>
+                <div class="reviews-box__name">
+                  <h4>Frequent Flyer</h4>
+                  <a href="#" class="links-accent">из Google Play</a>
+                </div>
+              </div>
+              <div class="reviews-box__body">
+                <div class="box-text">
+                  <p>Спасибо большое! Очень удобно, теперь нет необходимости сидеть за компьютером и ждать открытия
+                    регистрации.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__head">
+                <div class="reviews-box__avatar"><img src="img/user.png" alt=""></div>
+                <div class="reviews-box__name">
+                  <h4>Frequent Flyer</h4>
+                </div>
+              </div>
+              <div class="reviews-box__body">
+                <div class="box-text">
+                  <p>Хочу выразить благодарность сотрудникам компании за качественную и оперативную работу. Ваш сервис
+                    экономит мое время на подготовку к полетам, своевременное получение посадочных талонов и регистрации
+                    на рейс. Мне не нужно выходить на сайты авиакомпаний и заполнять формы для прохождения регистрации.
+                    Автоматизация этого процесса значительно облегчает жизнь.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="popular-airlines">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Популярные авиакомпании</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 col-sm-3">
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air1.png" alt=""></span>
+          <span class="popular-airlines-box__text">Аэрофлот</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air2.png" alt=""></span>
+          <span class="popular-airlines-box__text">Red Wings</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air3.png" alt=""></span>
+          <span class="popular-airlines-box__text">SmartAvia</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air4.png" alt=""></span>
+          <span class="popular-airlines-box__text">Ямал</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air5.png" alt=""></span>
+          <span class="popular-airlines-box__text">Lufthansa</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air6.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air Moldova</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air7.png" alt=""></span>
+          <span class="popular-airlines-box__text">Vueling Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air8.png" alt=""></span>
+          <span class="popular-airlines-box__text">SWISS</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air9.png" alt=""></span>
+          <span class="popular-airlines-box__text">SAS</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air10.png" alt=""></span>
+          <span class="popular-airlines-box__text">Pegasus Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air11.png" alt=""></span>
+          <span class="popular-airlines-box__text">Korean Air</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air12.png" alt=""></span>
+          <span class="popular-airlines-box__text">Iberia</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air13.png" alt=""></span>
+          <span class="popular-airlines-box__text">Eurowings</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air14.png" alt=""></span>
+          <span class="popular-airlines-box__text">Czech Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air15.png" alt=""></span>
+          <span class="popular-airlines-box__text">China Eastern</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air16.png" alt=""></span>
+          <span class="popular-airlines-box__text">Белавиа</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air17.png" alt=""></span>
+          <span class="popular-airlines-box__text">Ангара</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air18.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air India</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air19.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air Baltic</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-3">
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air20.png" alt=""></span>
+          <span class="popular-airlines-box__text">Уральские авиалинии</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air21.png" alt=""></span>
+          <span class="popular-airlines-box__text">Россия</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air22.png" alt=""></span>
+          <span class="popular-airlines-box__text">Nordwind Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air23.png" alt=""></span>
+          <span class="popular-airlines-box__text">Якутия</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air24.png" alt=""></span>
+          <span class="popular-airlines-box__text">Алроса</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air25.png" alt=""></span>
+          <span class="popular-airlines-box__text">ИрАэро</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air26.png" alt=""></span>
+          <span class="popular-airlines-box__text">United Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air27.png" alt=""></span>
+          <span class="popular-airlines-box__text">Singapore Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air28.png" alt=""></span>
+          <span class="popular-airlines-box__text">Ryanair</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air29.png" alt=""></span>
+          <span class="popular-airlines-box__text">Norwegian Air Shuttle</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air30.png" alt=""></span>
+          <span class="popular-airlines-box__text">KLM</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air31.png" alt=""></span>
+          <span class="popular-airlines-box__text">Hainan Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air32.png" alt=""></span>
+          <span class="popular-airlines-box__text">Etihad</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air33.png" alt=""></span>
+          <span class="popular-airlines-box__text">Cyprus Airways</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air34.png" alt=""></span>
+          <span class="popular-airlines-box__text">China Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air35.png" alt=""></span>
+          <span class="popular-airlines-box__text">Austrian</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air36.png" alt=""></span>
+          <span class="popular-airlines-box__text">American Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air37.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air France</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air38.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air Arabia</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-3">
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air39.png" alt=""></span>
+          <span class="popular-airlines-box__text">Utair</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air40.png" alt=""></span>
+          <span class="popular-airlines-box__text">Победа</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air41.png" alt=""></span>
+          <span class="popular-airlines-box__text">Азимут</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air42.png" alt=""></span>
+          <span class="popular-airlines-box__text">Nordstar</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air43.png" alt=""></span>
+          <span class="popular-airlines-box__text">Emirates</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air44.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air Astana</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air45.png" alt=""></span>
+          <span class="popular-airlines-box__text">THAI</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air46.png" alt=""></span>
+          <span class="popular-airlines-box__text">Северсталь</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air47.png" alt=""></span>
+          <span class="popular-airlines-box__text">Royal Air Maroc</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air48.png" alt=""></span>
+          <span class="popular-airlines-box__text">Nordavia</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air49.png" alt=""></span>
+          <span class="popular-airlines-box__text">Japan Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air50.png" alt=""></span>
+          <span class="popular-airlines-box__text">Глобус</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air51.png" alt=""></span>
+          <span class="popular-airlines-box__text">Egyptair</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air52.png" alt=""></span>
+          <span class="popular-airlines-box__text">Croatia Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air53.png" alt=""></span>
+          <span class="popular-airlines-box__text">Buta Airways</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air54.png" alt=""></span>
+          <span class="popular-airlines-box__text">Аврора</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air55.png" alt=""></span>
+          <span class="popular-airlines-box__text">Alitalia</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air56.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air Europa</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air57.png" alt=""></span>
+          <span class="popular-airlines-box__text">Aegean Airlines</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-3">
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air58.png" alt=""></span>
+          <span class="popular-airlines-box__text">Azur Air</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air59.png" alt=""></span>
+          <span class="popular-airlines-box__text">Pegas Fly (Икар)</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air60.png" alt=""></span>
+          <span class="popular-airlines-box__text">Turkish Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air61.png" alt=""></span>
+          <span class="popular-airlines-box__text">РусЛайн</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air62.png" alt=""></span>
+          <span class="popular-airlines-box__text">Ижавиа</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air63.png" alt=""></span>
+          <span class="popular-airlines-box__text">Flydubai</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air64.png" alt=""></span>
+          <span class="popular-airlines-box__text">TAP Portugal</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air65.png" alt=""></span>
+          <span class="popular-airlines-box__text">SCAT Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air66.png" alt=""></span>
+          <span class="popular-airlines-box__text">Qatar Airways</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air67.png" alt=""></span>
+          <span class="popular-airlines-box__text">LOT Polish Airlines</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air68.png" alt=""></span>
+          <span class="popular-airlines-box__text">Icelandair</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air69.png" alt=""></span>
+          <span class="popular-airlines-box__text">Finnair</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air70.png" alt=""></span>
+          <span class="popular-airlines-box__text">Delta</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air71.png" alt=""></span>
+          <span class="popular-airlines-box__text">China Southern</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air72.png" alt=""></span>
+          <span class="popular-airlines-box__text">British Airways</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air73.png" alt=""></span>
+          <span class="popular-airlines-box__text">AtlasGlobal</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air74.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air Serbia</span>
+        </a>
+        <a href="#" class="popular-airlines-box">
+          <span class="popular-airlines-box__icon"><img src="img/air75.png" alt=""></span>
+          <span class="popular-airlines-box__text">Air China</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="apps" id="mobile-app">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="apps-content">
+          <h2>Попробуйте наше приложение</h2>
+          <div class="box-text">
+            <p>Установите наше приложение и позвольте 1Checkin зарегистрировать вас на следующий рейс!</p>
+          </div>
+          <ul class="list-apps">
+            <li><a href="#"><img src="img/appstore.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/googleplay.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="apps-img"><img src="img/phone-img3.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="footer-box">
+          <a href="index.html" class="logo">
+            <span class="logo-img"><img src="img/logo.png" alt=""></span>
+            <span class="logo-text">WEB CHEKING</span>
+          </a>
+
+          <ul class="list-social">
+            <li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/in.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+          </ul>
+
+          <div class="copyright">© Evocativideas unipessoal lda 2021</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <ul class="footer-menu">
+          <li><a href="#">О сервисе</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Возможности</a></li>
+          <li><a href="#">Мобильное приложение</a></li>
+          <li><a href="#">Часто задаваемые вопросы</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <ul class="footer-menu">
+          <li><a href="#">Реквизиты</a></li>
+          <li><a href="#">Поддержать 1check.in</a></li>
+          <li><a href="#">Бизнес</a></li>
+          <li><a href="#">Авиакомпании</a></li>
+          <li><a href="#">Вакансии</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <ul class="footer-menu">
+          <li><a href="#">Политика конфиденциальности </a></li>
+          <li><a href="#">Условия использования сервиса </a></li>
+          <li><a href="#">Опасные грузы</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
