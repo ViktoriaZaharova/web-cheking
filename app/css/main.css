@@ -93,6 +93,13 @@ input, textarea, select {
   background: #fff;
   color: #000;
   font-size: 16px;
+  line-height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
     border-radius: 6px; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
@@ -103,6 +110,9 @@ input, textarea, select {
     color: #BABABA; }
   input::placeholder, textarea::placeholder, select::placeholder {
     color: #BABABA; }
+
+.select {
+  color: #BABABA; }
 
 textarea {
   width: 100%;
